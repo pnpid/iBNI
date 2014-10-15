@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iBNI</string>
+    <string name="loading">Loading</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="close">Tutup</string>
+    <string name="ibankUrl">https://ibank.bni.co.id</string>
+    <string name="adsEndUrl">http://pnp.web.id/ibni/adsEnd.php</string>
+    <string name="configUrl">http://pnp.web.id/ibni/config.php</string>
+    <string name="logUrl">http://pnp.web.id</string>
+</resources>

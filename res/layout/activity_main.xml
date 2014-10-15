@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#005f6b"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/loadingIndicator"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#005f6b"
+        android:layout_gravity="bottom|right"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            
+            android:src="@drawable/ic_launcher" 
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/loading"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:id="@+id/adsEnd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/adsEndWeb"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/adsEndClose"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/close" />
+    </RelativeLayout>
+
+</FrameLayout>
